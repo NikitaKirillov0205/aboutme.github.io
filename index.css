@@ -1,0 +1,694 @@
+@media (max-width: 767px){
+    body{
+        padding: 0px;
+        margin: 0px;
+        background-color: black;
+        animation: fadeInAnimation ease 1.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    /** header design **/
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .header{
+        background-color: white;
+        width: 98%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1%;
+        border-radius: 15px;
+        justify-content: space-around;
+        align-items: center;
+    
+        /** font **/
+        font-family: "Arimo", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 15%;
+
+    }
+    .logo_image{
+        height: 40px;
+        border-radius: 5px;
+        display: none;
+    }
+    .navigation{
+        display: none;
+        justify-content: space-around;
+        width: 30%;
+    }
+    #recent-id-scroll{
+        scroll-behavior: smooth;
+    }
+    #link1{
+        scroll-behavior: smooth;
+    }
+    .nav-elem :hover{
+        letter-spacing: 2px;
+        color: lightgray;
+        transition: 0.3s;
+    }
+    .nav-elem :not(:hover){
+        transition: 0.3s;
+    }
+    .headercontact{
+        display: grid;
+        align-items: center;
+        height: 40px;
+        width: 130px;
+        border: 2px solid red;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .headercontact :hover{
+        letter-spacing: 1px;
+        color: black;
+        transition: 0.3s;
+    }
+    .headercontact :not(:hover){
+        transition: 0.3s;
+    }
+    
+    .job_title{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 4%;
+        margin-left: 5%;
+        display: none;
+    }
+    
+    .curve{
+        display: none;
+        width: 40%;
+        position: absolute;
+        margin-top: -5%;
+        z-index: -1;
+    }
+    .curve1{
+        width: 40%;
+        position: absolute;
+        margin-top: -5%;
+        z-index: -1;
+        right: 0px;
+        top: 50%;
+        display: none;
+    }
+    
+    .big-text {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-top: 2%;
+        font-size: 250px;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .space_block{
+        display: none;
+        height: 100px;
+    }
+    
+    
+    .scrolling-text{
+        display: none;
+        margin-top: 3%;
+        font-size: 30px;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        color: white;
+        background-color: black;
+        overflow: hidden;
+        max-width: 100vw;
+    }
+    #scrolling-txt{
+        transition: transform 0.2s linear;
+    }
+    
+    
+    
+    
+    .about_me_block{
+        padding: 20px;
+        height: 700px; 
+        background-color: black;
+
+    }
+    
+    
+    .about-text{
+        color: white;
+        width: 90%;
+        margin-top: 5%;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    
+    .big-text-about {
+        margin-top: 5%;
+        width: 90%;
+        font-size: 80px;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .big-text-recent {
+        color: white;
+        width: 90%;
+        font-size: 80px;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 5%;
+        display: none;
+    }
+    .Recent-projects{
+        background-color: #D8DCDF;
+    }
+    
+    .h1-comp{
+        display: none;
+        width: 90%;
+        font-size: 40px;
+        font-family: "Bebas Neue", sans-serif;
+        font-style: normal;
+        margin-left: 10%;
+    }
+    
+    .Competitions_cont{
+        display: none;
+        margin-top: 1%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 5%;
+    }
+    .compt{
+        
+        display: grid;
+        display: none;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border-radius: 10px;
+        font-size: 40px;
+        font-family: "Bebas Neue", sans-serif;
+        font-style: normal;
+        text-align: center;
+        color: white;
+    }
+    .Competitions_cont :hover{
+        width: 220px;
+        height: 220px;
+        margin-top: -10px;
+        letter-spacing: 2px;
+        transition: 0.3s;
+        display: none;
+    }
+    .Competitions_cont :not(:hover){
+        transition: 0.3s;
+    }
+    
+    .projects_cont{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10%;
+        display: none;
+    }
+    .project{
+        display: grid;
+        align-items: center;
+        width: 600px;
+        height: 200px;
+        background-color: red;
+        border-radius: 10px;
+        font-size: 40px;
+        font-family: "Bebas Neue", sans-serif;
+        font-style: normal;
+        text-align: center;
+        color: white;
+        display: none;
+    }
+    .projects_cont :hover{
+        width: 620px;
+        height: 200px;
+        
+        letter-spacing: 2px;
+        transition: 0.3s;
+    }
+    .projects_cont :not(:hover){
+        transition: 0.3s;
+    }
+    .projects-flex{
+        display: flex;
+    }
+     
+    #understand{
+        background-image: url(understand.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0px;
+    }
+    
+    .get_in_touch{
+        padding-top: 5%;
+        height: 1000px;
+        background-color: black;
+        display: none;
+    }
+    .big-text-intouch {
+        width: 90%;
+        color: white;
+        font-size: 200px;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 5%;
+        display: none;
+    }
+    
+    .get-text{
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin: 5% ;
+        width: 60%;
+        font-size: 25px;
+        display: none;
+    }
+    .curve-text{
+        display: flex;
+        flex-wrap: nowrap;
+        display: none;
+    }
+    
+    .curve-2{
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        height: 700px;
+        display: none;
+    }
+    
+    .footer{
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        display: none;
+    }
+    .logo_image_footer{
+        margin-top: 60px;
+        margin-left: 60px;
+        height: 80px;
+        border-radius: 15px;
+        display: none;
+    }
+    .footer-text{
+        text-align: left;
+        color: black;
+        font-family: "Arimo", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        width: 50%;
+        margin-top: 80px;
+        display: none;
+    }
+    
+    
+}
+
+
+
+
+
+
+/** desktop **/
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 767px){
+.mobile-version{
+    display: none;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #D8DCDF;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/** header design **/
+a{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    background-color: white;
+    width: 98%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1%;
+    border-radius: 15px;
+    justify-content: space-around;
+    align-items: center;
+
+    /** font **/
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%;
+    margin-left: -4%;
+}
+.logo_image{
+    height: 40px;
+    border-radius: 5px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+#recent-id-scroll{
+    scroll-behavior: smooth;
+}
+#link1{
+    scroll-behavior: smooth;
+}
+.nav-elem :hover{
+    letter-spacing: 2px;
+    color: lightgray;
+    transition: 0.3s;
+}
+.nav-elem :not(:hover){
+    transition: 0.3s;
+}
+.headercontact{
+    display: grid;
+    align-items: center;
+    height: 40px;
+    width: 130px;
+    border: 2px solid red;
+    text-align: center;
+    border-radius: 5px;
+}
+.headercontact :hover{
+    letter-spacing: 1px;
+    color: black;
+    transition: 0.3s;
+}
+.headercontact :not(:hover){
+    transition: 0.3s;
+}
+
+.job_title{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 4%;
+    margin-left: 5%;
+}
+
+.curve{
+    width: 40%;
+    position: absolute;
+    margin-top: -5%;
+    z-index: -1;
+}
+.curve1{
+    width: 40%;
+    position: absolute;
+    margin-top: -5%;
+    z-index: -1;
+    right: 0px;
+    top: 50%;
+}
+
+.big-text {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 2%;
+    font-size: 250px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.space_block{
+    height: 100px;
+}
+
+
+.scrolling-text{
+    margin-top: 3%;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    overflow: hidden;
+    max-width: 100vw;
+}
+#scrolling-txt{
+    transition: transform 0.2s linear;
+}
+
+
+
+
+.about_me_block{
+    margin-bottom: -50px;
+    height: 700px; 
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.about-text{
+    color: white;
+    width: 40%;
+    margin-top: 5%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.big-text-about {
+    margin-top: 5%;
+    width: 40%;
+    font-size: 200px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.big-text-recent {
+    width: 90%;
+    font-size: 200px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5%;
+}
+
+.h1-comp{
+    width: 90%;
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    margin-left: 10%;
+}
+
+.Competitions_cont{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+.compt{
+    display: grid;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 10px;
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    text-align: center;
+    color: white;
+}
+.Competitions_cont :hover{
+    width: 220px;
+    height: 220px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.Competitions_cont :not(:hover){
+    transition: 0.3s;
+}
+
+.projects_cont{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+.project{
+    display: grid;
+    align-items: center;
+    width: 600px;
+    height: 200px;
+    background-color: red;
+    border-radius: 10px;
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    text-align: center;
+    color: white;
+}
+.projects_cont :hover{
+    width: 620px;
+    height: 200px;
+    
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.projects_cont :not(:hover){
+    transition: 0.3s;
+}
+.projects-flex{
+    display: flex;
+}
+ 
+#understand{
+    background-image: url(understand.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px;
+}
+
+.get_in_touch{
+    padding-top: 5%;
+    height: 1000px;
+    background-color: black;
+}
+.big-text-intouch {
+    width: 90%;
+    color: white;
+    font-size: 200px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5%;
+}
+
+.get-text{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 5% ;
+    width: 60%;
+    font-size: 25px;
+}
+.curve-text{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.curve-2{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    height: 700px;
+}
+
+.footer{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo_image_footer{
+    margin-top: 60px;
+    margin-left: 60px;
+    height: 80px;
+    border-radius: 15px;
+}
+.footer-text{
+    text-align: left;
+    color: black;
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    width: 50%;
+    margin-top: 80px;
+}
+
+
+
+}
+
